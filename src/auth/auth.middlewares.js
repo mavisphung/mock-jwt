@@ -6,7 +6,8 @@ const authMethod = require('./auth.methods');
 
 exports.isAuth = async (req, res, next) => {
 	// Lấy access token từ header
-	const accessTokenFromHeader = req.headers.x_authorization;
+    console.log(req.headers)
+	const accessTokenFromHeader = req.headers.authorization;
 	if (!accessTokenFromHeader) {
 		return res.status(401).send('Không tìm thấy access token!');
 	}
@@ -15,7 +16,7 @@ exports.isAuth = async (req, res, next) => {
 		process.env.ACCESS_TOKEN_SECRET || jwtVariable.accessTokenSecret;
 
 	const verified = await authMethod.verifyToken(
-		accessTokenFromHeader,
+		accessTokenFromHeader.split(' ')[1],
 		accessTokenSecret,
 	);
 	if (!verified) {

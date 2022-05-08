@@ -9,6 +9,11 @@
       "username": "test",
       "password": "$2b$10$551S.jDXAX2/nQGB/Nh61emeFR8cknVQuiSlrWDclWo/ot0Xx1NfK",
       "refreshToken": "9wcdH7sapVh19oTf6rODvAZcHQuOZyTdCq3qk2IKRnHzu31yitICzAWFuXHdlYvtvgeFUlr6Qu8Yf3hByaeCDXmg7tS22whx2Ua3"
+    },
+    {
+      "username": "huy",
+      "password": "$2b$10$CLuQ3CqUcF3NLNDb42syc.M9De5BP7giVgoAyq/A1R/xr9iTeN3Xy",
+      "refreshToken": "ZHfurwFxXtRtUydSVbv5Vgl10r8yVHjjZAOmZvHrwC3XX0BcKb99U34wOOsE0Tl7oc4ByKzEKFozb1wgn8UyI1QYKJzI4qM8mW9x"
     }
   ]
 }
